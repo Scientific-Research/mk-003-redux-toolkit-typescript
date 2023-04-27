@@ -1,0 +1,23 @@
+body {
+  background-color: #333;
+  font-family: sans-serif;
+  padding: 0 1rem;
+  color: white;
+  h1 {
+    color: rgb(218, 218, 89);
+  }
+
+  nav {
+    background-color: #222;
+    padding: 0.5rem;
+    a {
+      color: #aaa;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    a.active {
+      color: rgb(211, 211, 110);
+    }
+  }
+}
