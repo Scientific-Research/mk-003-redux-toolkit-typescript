@@ -18,13 +18,13 @@ export const PageBooks = () => {
       <hr />
       <span>Count: {count}</span> */}
 
-      {books.map(book =>{
-        return(
+      {books.map((book) => {
+        return (
           <div className="book">
             {/* {book.title} */}
-            <img src="" alt="" />
+            <img src={`images/${book.idCode}.jpg`} alt="" />
           </div>
-        )
+        );
       })}
     </div>
   );
