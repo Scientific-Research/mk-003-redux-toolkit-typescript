@@ -13,6 +13,7 @@ export const PageCart = () => {
           return (
             <div className="cartItem">
               <img src={`images/${cartItem.book.idCode}.jpg`} alt="" />
+              <div className="title">{cartItem.book.title}</div>
             </div>
           );
         })}
