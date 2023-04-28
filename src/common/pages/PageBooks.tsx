@@ -14,7 +14,7 @@ export const PageBooks = () => {
       <button onClick={() => dispatch(subtract())}>Subtract One</button>
       <button onClick={() => dispatch(add())}>Add One</button>
       <hr />
-      <span>{count}</span>
+      <span>Count: {count}</span>
     </div>
   );
 };
