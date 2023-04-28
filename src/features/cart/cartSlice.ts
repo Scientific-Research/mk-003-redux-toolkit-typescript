@@ -18,7 +18,22 @@ const books = [
   },
 ];
 
-const initialState = {
+interface IBook {
+  id: number;
+  idCode: string;
+  title: string;
+}
+
+interface ICartItem {
+  book: IBook;
+}
+
+interface IState {
+  books: IBook[];
+  cartItems: ICartItem[];
+}
+
+const initialState:IState = {
   //   count: 0,
   books,
   cartItems: [],
