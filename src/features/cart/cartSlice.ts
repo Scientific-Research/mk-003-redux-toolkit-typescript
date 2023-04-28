@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 const books = [
   {
@@ -33,7 +33,7 @@ interface IState {
   cartItems: ICartItem[];
 }
 
-const initialState:IState = {
+const initialState: IState = {
   //   count: 0,
   books,
   cartItems: [],
@@ -43,11 +43,14 @@ export const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    subtract: (state) => {
-      state.count--;
-    },
-    add: (state) => {
-      state.count++;
+    // subtract: (state) => {
+    //   state.count--;
+    // },
+    // add: (state) => {
+    //   state.count++;
+    // },
+    addCartItem: (state, action: PayloadAction<ICartItem>) => {
+      state.cartItems.push(action.payload);
     },
   },
 });
