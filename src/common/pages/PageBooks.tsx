@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 // import { add, subtract } from "../../features/cart/cartSlice";
 import { RootState } from "../../app/store";
+import { NavLink } from "react-router-dom";
 
 export const PageBooks = () => {
   const dispatch = useDispatch();
@@ -32,7 +33,10 @@ export const PageBooks = () => {
           );
         })}
       </div>
-      <p className="message">You have {cartItems.length} items in your cart.</p>
+      <p className="message">
+        You have {cartItems.length} items in your{" "}
+        <NavLink to="/cart">cart</NavLink>
+      </p>
     </div>
   );
 };
