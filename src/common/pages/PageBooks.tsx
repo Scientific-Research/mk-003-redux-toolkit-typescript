@@ -21,7 +21,8 @@ export const PageBooks = () => {
       {books.map(book =>{
         return(
           <div className="book">
-            nnn
+            {/* {book.title} */}
+            <img src="" alt="" />
           </div>
         )
       })}
