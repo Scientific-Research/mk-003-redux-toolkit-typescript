@@ -4,6 +4,9 @@ import cartReducer from "../features/cart/cartSlice";
 
 export const store = configureStore({
   // TODO: add slices here
+  reducer: {
+    cart: cartReducer,
+  },
 });
 
 // Boilderplate for Redux
