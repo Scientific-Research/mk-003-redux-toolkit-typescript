@@ -20,7 +20,7 @@ export const PageBooks = () => {
       <div className="books">
         {books.map((book) => {
           return (
-            <div className="book">
+            <div className="book" key={book.id}>
               {/* {book.title} */}
               <img src={`images/${book.idCode}.jpg`} alt="" />
             </div>
