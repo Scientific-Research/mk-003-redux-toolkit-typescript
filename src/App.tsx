@@ -1,4 +1,4 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+import { NavLink, Navigate, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import { PageWelcome } from "./components/PageWelcome";
 import { PageBooks } from "./components/PageBooks";
@@ -7,7 +7,7 @@ import { PageCart } from "./components/PageCart";
 function App() {
   return (
     <div className="App">
-      <h1>Info Site</h1>
+      <h1>Redux Shop</h1>
       {/* <p>Welcome to this page!</p> */}
 
       <nav>
@@ -20,6 +20,7 @@ function App() {
         <Route path="/welcome" element={<PageWelcome />} />
         <Route path="/books" element={<PageBooks />} />
         <Route path="/cart" element={<PageCart />} />
+        <Route path="/" element={<Navigate to="/welcome" replace />}></Route>
       </Routes>
     </div>
   );
