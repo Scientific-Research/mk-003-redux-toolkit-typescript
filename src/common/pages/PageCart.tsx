@@ -10,7 +10,11 @@ export const PageCart = () => {
       {/* <p>Welcome to the Cart page.</p> */}
       <div className="cartItems">
         {cartItems.map((cartItem) => {
-          return <div className="cartItem">nnn</div>;
+          return (
+            <div className="cartItem">
+              <img src={`images/${cartItem.book.idCode}.jpg`} alt="" />
+            </div>
+          );
         })}
       </div>
     </div>
