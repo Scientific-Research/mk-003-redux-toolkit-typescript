@@ -13,6 +13,8 @@ export const PageBooks = () => {
       {/* <p>Welcome to the Books page.</p> */}
       <button onClick={() => dispatch(subtract())}>Subtract One</button>
       <button onClick={() => dispatch(add())}>Add One</button>
+      <hr />
+      <span>{count}</span>
     </div>
   );
 };
