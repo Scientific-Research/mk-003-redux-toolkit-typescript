@@ -5,8 +5,10 @@ export const PageBooks = () => {
   const dispatch = useDispatch();
 
   return (
-    <>
-      <p>Welcome to the Books page.</p>
-    </>
+    <div className="pageBooks">
+      {/* <p>Welcome to the Books page.</p> */}
+      <button onClick={() => dispatch(subtract())}>Subtract One</button>
+      <button onClick={() => dispatch(add())}>Add One</button>
+    </div>
   );
 };
