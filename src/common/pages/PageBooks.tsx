@@ -17,15 +17,16 @@ export const PageBooks = () => {
       <button onClick={() => dispatch(add())}>Add One</button>
       <hr />
       <span>Count: {count}</span> */}
-
-      {books.map((book) => {
-        return (
-          <div className="book">
-            {/* {book.title} */}
-            <img src={`images/${book.idCode}.jpg`} alt="" />
-          </div>
-        );
-      })}
+      <div className="books">
+        {books.map((book) => {
+          return (
+            <div className="book">
+              {/* {book.title} */}
+              <img src={`images/${book.idCode}.jpg`} alt="" />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
