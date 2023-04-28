@@ -13,10 +13,18 @@ export const PageBooks = () => {
   return (
     <div className="pageBooks">
       {/* <p>Welcome to the Books page.</p> */}
-      <button onClick={() => dispatch(subtract())}>Subtract One</button>
+      {/* <button onClick={() => dispatch(subtract())}>Subtract One</button>
       <button onClick={() => dispatch(add())}>Add One</button>
       <hr />
-      <span>Count: {count}</span>
+      <span>Count: {count}</span> */}
+
+      {books.map(book =>{
+        return(
+          <div className="book">
+            nnn
+          </div>
+        )
+      })}
     </div>
   );
 };
